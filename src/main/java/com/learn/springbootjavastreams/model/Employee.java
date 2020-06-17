@@ -12,10 +12,11 @@ import java.math.BigDecimal;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long employeeId;
+    private long employeeId;
     @Column(name = "employeeName")
     private String employeeName;
     @Column(name = "employeeSalary")
